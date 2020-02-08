@@ -9,6 +9,7 @@ class Film
 end
 #Metoda qe e kthen filmin me minimum memorie
 def findMin(a)
+    fil = Film.new
     max = 0
     a.each do |i|
         if max < i.mem 
@@ -17,9 +18,10 @@ def findMin(a)
     end
     a.each do |i|
         if max == i.mem
-            puts("Filmi me memorie mat madhe esht: #{i.name}")
+            fil = i
         end    
     end
+    return fil
 end
 
 
@@ -38,8 +40,8 @@ for i in 0..n-1 do
     newFilm.cat = ca
     a << newFilm
 end
-
-findMin(a);
+give  = findMin(a).name 
+puts ("Filmi me memorie met lart: #{give}");
 
 
 
