@@ -1,12 +1,18 @@
 class Film 
     attr_accessor :name, :mem, :cat
-
+    def initialize(name, mem,cat)
+        @name = name
+        @mem  = mem
+        @cat  = cat
+    end
     def print 
         puts ("Emri filmi: #{@name}")
         puts ("Memoria e filmit: #{@mem}")
         puts ("Kategoria: #{@cat}")
     end
 end
+
+
 #Metoda qe e kthen filmin me minimum memorie
 def findMin(a)
     fil = Film.new
