@@ -31,7 +31,8 @@ class Omega
 end
 
 nali = Omega.new
+keki = Omega.new
 
-inputObj(nali)
-puts(ypsilon(nali))
+nali.inputObj(keki)
+puts(nali.ypsilon(keki))
     
