@@ -34,5 +34,5 @@ nali = Omega.new
 keki = Omega.new
 
 nali.inputObj(keki)
-puts(nali.ypsilon(keki))
+puts("Ypsiloni esht i barabart me: " + nali.ypsilon(keki).to_s)
     
