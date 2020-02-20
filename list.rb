@@ -9,6 +9,7 @@ end
 class List
     # Duna me ndreq qe me inkuadru Node klasen..
     # Gjithashtu edhe metodat per insertim per printim...
+    @nil = nil
     @head = nil
     @curr = nil
     @tail =nil
@@ -42,7 +43,11 @@ class List
             while @curr.next != nil do
                 if @curr.next.value == data
                     far = @curr.next
-                    @curr.next = far.next
+                    if far.next == nil 
+                        @curr.next = @nil
+                    else
+                        @curr.next = far.next
+                    end
                 end
                 @curr = @curr.next
             end
@@ -55,6 +60,6 @@ list.add(5)
 list.add(2)
 list.add(3)
 list.print
-list.delete(2)
+list.delete(3)
 list.print
 # Just when its the last one i cant delete it  so i should add new code
