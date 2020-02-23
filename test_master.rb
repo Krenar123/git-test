@@ -43,7 +43,7 @@ class Player < Team
 
     # This method gets all info about this team
     def getPlayer
-        "Ekipi: #{name} ka: #{num} dhe lojtaret: #{@player}" 
+        "Ekipi: #{name} ka: #{num}lojtar dhe ata jane: #{@player}" 
     end
 
     # Private method player you cant get player 
