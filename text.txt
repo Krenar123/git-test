@@ -1,0 +1,3 @@
+super nese ka argument funksjoni e merr qat argument nese ska ska
+
+nese do mos me marr argument duhet super()
